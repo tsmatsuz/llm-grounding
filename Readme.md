@@ -16,17 +16,17 @@ API キーは、リソースブレードの左メニューの「Keys and Endpoin
 
 今回は、以下の手順で、Azure Machine Learning のノートブックを使います。
 
-まず、Azure Machine Learning のリソースを新規作成します。
+まず、[Azure Portal](https://portal.azure.com) 上で Azure Machine Learning のリソースを新規作成します。
 
-[Azure Machine Learning studio](https://ml.azure.com/) を表示します。
+作成されたら、[Azure Machine Learning studio](https://ml.azure.com/) を表示します。
 
-ナビゲーションメニューから「ノートブック」を選択し、```Users/{ユーザーフォルダ}``` の下に、「Create new file」を選択してシェルスクリプト (.sh) を作成します。<br>
-(ファイル名の拡張子を「.sh」として、ファイルタイプも「Bash (*.sh)」に変更します。)
+ナビゲーションメニューから「ノートブック」を選択し、```Users/{ユーザーフォルダ}``` の下で、「Create new file」を選択してシェルスクリプト (.sh) を作成します。<br>
+(ファイル名の拡張子を「.sh」として、ファイルタイプも「Bash (*.sh)」に変更してください。)
 
 ![スクリプトの新規作成](https://learn.microsoft.com/en-us/azure/machine-learning/media/how-to-create-manage-compute-instance/create-or-upload-file.png)
 
 作成したファイルに、下記の通り記述して Save します。<br>
-```{RESOURCE NAME}``` には、上記で作成した Azure OpenAI リソースのリソース名を記述し、```{API KEY}``` には上記で取得した API キーを設定します。
+```{RESOURCE NAME}``` には、上記で作成した Azure OpenAI リソースのリソース名を設定し、```{API KEY}``` には上記で取得した API キーを設定します。
 
 ```
 #!/bin/bash
@@ -52,7 +52,7 @@ EOF
 
 
 ナビゲーションメニューから「コンピュート」を選択し、「コンピュートインスタンス」を新規作成します。<br>
-この際、「詳細設定」 (Advanced setting) で、「Provision with setup script」を有効にして、creation script として上記で作成したスクリプトを設定して新規作成します。
+この際、「詳細設定」 (Advanced Settings) で、「Provision with setup script」を有効にして、creation script として上記で作成したスクリプトを設定して新規作成します。
 
 ## コードの作成
 
