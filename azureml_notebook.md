@@ -1,6 +1,6 @@
 ## Azure Machine Learning ノートブックを使用する場合
 
-Azure Virtual Machine の代わりに、Azure Machine Learning notebook (ノートブック) を使用する場合には、実行環境を以下の通りセットアップしてください。
+Azure Virtual Machine を使ったノートブック環境の代わりに、Azure Machine Learning notebook (ノートブック) を使用する場合には、実行環境を以下の通りセットアップしてください。
 
 [Azure Portal](https://portal.azure.com) 上で Azure Machine Learning のリソースを新規作成します。
 
