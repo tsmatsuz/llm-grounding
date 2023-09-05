@@ -9,7 +9,7 @@
 Azure OpenAI Service のリソースを新規作成します。(既に作成済の方は飛ばしてください。)<br>
 gpt-35-turbo と text-embedding-ada-002 を使用しますので、どのリージョン (東日本含む) を選択しても構いません。
 
-text-davinci-003 と text-embedding-ada-002 を deploy します。(既に deploy 済の方は飛ばしてください。)
+gpt-35-turbo と text-embedding-ada-002 を deploy します。(既に deploy 済の方は飛ばしてください。)
 
 Azure OpenAI Service の API キーを取得します。<br>
 API キーは、リソースブレードの左メニューの「Keys and Endpoint」から取得できます。
