@@ -54,7 +54,7 @@ git clone https://github.com/tsmatsuz/llm-grounding
 コピーされたリポジトリ内のノートブック (.ipynb) を開き、カーネルを [Python 3.8 - Azure ML] に変更して、ノートブック上の指示に従って順番に実行します。
 
 <blockquote>
-ノートブック環境で OpenAI Python Library のパッケージが使用可能か否かは、下記で確認してください。
+Note : ノートブック環境で OpenAI Python Library のパッケージが使用可能か否かは、下記で確認してください。
 
 ```
 import openai
