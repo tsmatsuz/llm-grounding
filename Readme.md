@@ -2,21 +2,29 @@
 
 大規模言語モデル (Large Language Model, LLM) の RAG (Retrieval Augmented Generation) のアーキテクチャ (または Grounding) を API レベルで学ぶ目的のハンズオンです。
 
+- [テキストの Embedding とデータベースへの保存](./01-embedding.ipynb)
+- [質問応答 (Question-Answering) の実行 (演習)](./02-practice.ipynb)
+- [質問応答 (Question-Answering) の実行 (回答例)](./03-answer.ipynb)
+
+> プロンプトフロー (Prompt Flow) を用いた RAG の実装については、[こちら](https://github.com/tsmatsuz/prompt-flow-handson) のリポジトリを参照してください。
+
+本ハンズオンを実施する前に、下記の準備をおこなってください。
+
 ## Azure OpenAI Service リソースのセットアップ
 
 [Azure Portal](https://portal.azure.com) にログインします。
 
-Azure OpenAI Service のリソースを新規作成します。(既に作成済の方は飛ばしてください。)<br>
+Azure OpenAI Service のリソースを新規作成します。(既に作成済の方はスキップしてください。)<br>
 gpt-35-turbo と text-embedding-ada-002 を使用しますので、どのリージョン (東日本含む) を選択しても構いません。
 
-gpt-35-turbo と text-embedding-ada-002 を deploy します。(既に deploy 済の方は飛ばしてください。)
+gpt-35-turbo と text-embedding-ada-002 を deploy します。(既に deploy 済の方はスキップしてください。)
 
 Azure OpenAI Service の API キーを取得します。<br>
 API キーは、リソースブレードの左メニューの「Keys and Endpoint」から取得できます。
 
 > このハンズオンでは、大量ドキュメントの Embedding を実行します。text-embedding-ada-002 は、Tokens per minutes (TPM) の値を 120 K 以上に設定してください。
 
-## 実行環境の作成
+## ノートブック環境の作成
 
 今回は、以下の手順で、Microsoft Azure 上に Ubuntu を作成し、ノートブックを使います。
 
@@ -45,7 +53,7 @@ echo -e "export OPENAI_API_KEY={API KEY}" >> ~/.bashrc
 
 > Note : コマンド ```tail .bashrc``` で正しく設定されていることを確認してください。
 
-## Notebook の利用
+## ノートブックの利用
 
 いったんログアウトをおこない、ターミナル クライアント (PuTTY など) で再度ログインをおこないます。<br>
 この際、ポート 8888 の Tunnel 設定 (port forwarding 設定) をおこなってください。
