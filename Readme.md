@@ -6,9 +6,11 @@
 - [質問応答 (Question-Answering) の実行 (演習)](./02-practice.ipynb)
 - [質問応答 (Question-Answering) の実行 (回答例)](./03-answer.ipynb)
 
+本ハンズオンを実施する前に、下記の準備をおこなってください。
+
 > プロンプトフロー (Prompt Flow) を用いた RAG の実装については、[こちら](https://github.com/tsmatsuz/prompt-flow-handson) のリポジトリを参照してください。
 
-本ハンズオンを実施する前に、下記の準備をおこなってください。
+> ここでは、Microsoft Azure の仮想マシンを使ってノートブック環境を構築します。Azure Machine Learning ノートブックを使用したセットアップ方法については、[azureml_notebook.md](./azureml_notebook.md) を参照してください。
 
 ## Azure OpenAI Service リソースのセットアップ
 
