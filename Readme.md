@@ -53,7 +53,7 @@ echo -e "export OPENAI_API_BASE=https://{RESOURCE NAME}.openai.azure.com" >> ~/.
 echo -e "export OPENAI_API_KEY={API KEY}" >> ~/.bashrc
 ```
 
-> Note : コマンド ```tail .bashrc``` で正しく設定されていることを確認してください。
+> コマンド ```tail .bashrc``` で正しく設定されていることを確認してください。
 
 ## ノートブックの利用
 
