@@ -6,13 +6,11 @@
 - [質問応答 (Question-Answering) の実行 (演習)](./02-practice.ipynb)
 - [質問応答 (Question-Answering) の実行 (回答例)](./03-answer.ipynb)
 
-本ハンズオンを実施する前に、下記の準備をおこなってください。
-
 > プロンプトフロー (Prompt Flow) を用いた RAG の実装については、[こちら](https://github.com/tsmatsuz/prompt-flow-handson) のリポジトリを参照してください。
 
-> ここでは、Microsoft Azure の仮想マシンを使ってノートブック環境を構築します。Azure Machine Learning ノートブックを使用したセットアップ方法については、[azureml_notebook.md](./azureml_notebook.md) を参照してください。
+本ハンズオンを実施する前に、下記の準備をおこなってください。
 
-## Azure OpenAI Service リソースのセットアップ
+## Azure OpenAI Service リソースの準備
 
 [Azure Portal](https://portal.azure.com) にログインします。
 
@@ -26,9 +24,11 @@ API キーは、リソースブレードの左メニューの「Keys and Endpoin
 
 > このハンズオンでは、大量ドキュメントの Embedding を実行します。text-embedding-ada-002 は、Tokens per minutes (TPM) の値を 120 K 以上に設定してください。
 
-## ノートブック環境の作成
+## 環境のセットアップ
 
-今回は、以下の手順で、Microsoft Azure 上に Ubuntu を作成し、ノートブックを使います。
+今回は、以下の手順で、Microsoft Azure 上に Ubuntu の仮想マシンを作成し、ここでノートブックを使用します。
+
+> Azure Machine Learning ノートブックを使用したセットアップ方法については、[azureml_notebook.md](./azureml_notebook.md) を参照してください。
 
 まず、[Azure Portal](https://portal.azure.com) 上で Ubuntu Server 20.04 LTS のリソースを新規作成します。
 
@@ -71,5 +71,11 @@ jupyter notebook
 表示される URL (例: http://localhost:8888/tree?token=xxxxx) をコピーして、ブラウザーでアクセスします。
 
 > Tunnel 設定 (port forwarding 設定) でうまく接続できない場合、Azure 仮想マシンのネットワーク (Networking) メニューを選択して、ポート (既定は 8888 を使用) を開けて接続してください。
+
+コンソール上で、この GitHub リポジトリをコピー (クローン) して、各ノートブックを開いてください。
+
+```
+git clone https://github.com/tsmatsuz/llm-grounding
+```
 
 > このハンズオンは、gpt-35-turbo model version 0613、text-embedding-ada-002 model version 2 と Azure OpenAI Service api version 2023-05-15 で動作を確認しています。
